@@ -1,0 +1,33 @@
+DEBUG = "true"
+ENVIRONMENT = "testing"
+LISTEN_HOST = "0.0.0.0"
+LISTEN_PORT = "9000"
+
+REDIS_URL = "redis://localhost:6379"
+
+PROCESSOR = "ravenpack"
+PROCESSOR_EVENTS = "created,updated,removed"
+
+REFDB_ENDPOINT = "https://f001.backblazeb2.com/file/bbb2-cdn/refdb.json"
+REFDB_UPDATE_INTERVAL = "60s"
+
+KAFKA_BROKERS = "localhost:19092,localhost:29092,localhost:39092"
+KAFKA_TOPIC = "ftp-testing"
+KAFKA_GROUP_ID = "testing"
+KAFKA_USERNAME = ""
+KAFKA_PASSWORD = ""
+KAFKA_TLS_CA = ""
+KAFKA_TLS_CERT = ""
+KAFKA_TLS_KEY = ""
+
+FTP_PATH = "/"
+FTP_HOST = "localhost:21221"
+FTP_USERNAME = "benzinga"
+FTP_PASSWORD = "testing"
+FTP_CONNECT_TIMEOUT = "5s"
+FTP_SEND_RETRIES = "1"
+
+JAEGER_AGENT_HOST = "jaeger"
+JAEGER_AGENT_PORT = "5775"
+JAEGER_SAMPLER_TYPE = "const"
+JAEGER_SAMPLER_PARAM = "1"

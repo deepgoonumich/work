@@ -1,0 +1,123 @@
+version: "3.5"
+
+services:
+  zk1:
+    image: confluentinc/cp-zookeeper:latest
+    ports: 
+      - "22181:22181"
+    environment:
+      ZOOKEEPER_SERVER_ID: 1
+      ZOOKEEPER_CLIENT_PORT: 22181
+      ZOOKEEPER_TICK_TIME: 2000
+      ZOOKEEPER_INIT_LIMIT: 5
+      ZOOKEEPER_SYNC_LIMIT: 2
+      ZOOKEEPER_SERVERS: zk1:22888:23888;zk2:32888:33888;zk3:42888:43888
+
+  zk2:
+    image: confluentinc/cp-zookeeper:latest
+    ports:
+      - "32181:32181"
+    environment:
+      ZOOKEEPER_SERVER_ID: 2
+      ZOOKEEPER_CLIENT_PORT: 32181
+      ZOOKEEPER_TICK_TIME: 2000
+      ZOOKEEPER_INIT_LIMIT: 5
+      ZOOKEEPER_SYNC_LIMIT: 2
+      ZOOKEEPER_SERVERS: zk1:22888:23888;zk2:32888:33888;zk3:42888:43888
+
+  zk3:
+    image: confluentinc/cp-zookeeper:latest
+    ports: 
+      - "42181:42181"
+    environment:
+      ZOOKEEPER_SERVER_ID: 3
+      ZOOKEEPER_CLIENT_PORT: 42181
+      ZOOKEEPER_TICK_TIME: 2000
+      ZOOKEEPER_INIT_LIMIT: 5
+      ZOOKEEPER_SYNC_LIMIT: 2
+      ZOOKEEPER_SERVERS: zk1:22888:23888;zk2:32888:33888;zk3:42888:43888
+
+  kafka-1:
+    image: confluentinc/cp-kafka:5.2.1
+    ports:
+      - "19092:19092"
+    depends_on:
+      - zk1
+      - zk2
+      - zk3
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: ${MY_IP}:22181,${MY_IP}:32181,${MY_IP}:42181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://${MY_IP}:19092
+
+  kafka-2:
+    image: confluentinc/cp-kafka:5.2.1
+    ports:
+      - "29092:29092"
+    depends_on:
+      - zk1
+      - zk2
+      - zk3
+    environment:
+      KAFKA_BROKER_ID: 2
+      KAFKA_ZOOKEEPER_CONNECT: ${MY_IP}:22181,${MY_IP}:32181,${MY_IP}:42181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://${MY_IP}:29092
+
+  kafka-3:
+    image: confluentinc/cp-kafka:5.2.1
+    ports: 
+      - "39092:39092"
+    depends_on:
+      - zk1
+      - zk2
+      - zk3
+    environment:
+      KAFKA_BROKER_ID: 3
+      KAFKA_ZOOKEEPER_CONNECT: ${MY_IP}:22181,${MY_IP}:32181,${MY_IP}:42181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://${MY_IP}:39092
+
+  redis:
+    image: redis:5-alpine
+    ports:
+      - 6379:6379
+
+  jaeger:
+    image: jaegertracing/all-in-one
+    ports:
+      - 5775:5775/udp # collect zipkin.thrift via compact thrift
+      - 6831:6831/udp # collect jaeger.thrift via compact thrift
+      - 6832:6832/udp # collect jaeger.thrift via binary thrift
+      - 5778:5778 # configs
+      - 16686:16686 # frontend
+      - 14268:14268 # collect jaeger.thrift directly from clients
+
+  ftp-server:
+    image: stilliard/pure-ftpd:latest
+    container_name: pure-ftpd
+    ports:
+      - "21221:21"
+      - "30000-30009:30000-30009"
+    volumes:
+      - "./resources/ftp-test/home/ftpusers/:/home/ftpusers/"
+      - "./resources/ftp-test/passwd:/etc/pure-ftpd/passwd"
+
+  updater:
+    build:
+      context: .
+      dockerfile: resources/dockerfiles/updater.Dockerfile
+    env_file:
+      - local.env
+
+  engine:
+    build:
+      context: .
+      dockerfile: resources/dockerfiles/engine.Dockerfile
+    depends_on:
+      - updater
+    volumes: 
+      - ./example/:/example
+      - ./resources/tls-test:/tls
+    env_file:
+      - local.env
+    ports:
+      - 9000:9000

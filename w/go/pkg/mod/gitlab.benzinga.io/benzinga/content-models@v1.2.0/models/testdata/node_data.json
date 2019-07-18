@@ -1,0 +1,191 @@
+{
+	"_id" : "5cace2ea2ea02298cb20234f",
+	"nid" : 5680941,
+	"type" : "story",
+	"language" : "",
+	"uid" : 1,
+	"status" : 1,
+	"created" : 1554834152,
+	"changed" : 1554834205,
+	"comment" : 0,
+	"promote" : 1,
+	"moderate" : 0,
+	"sticky" : 0,
+	"tnid" : 0,
+	"translate" : 0,
+	"is_bz_post" : 1,
+	"is_bzpro_post" : 1,
+	"count_char" : 21,
+	"count_word" : 2,
+	"vid" : 5665764,
+	"revision_uid" : 1,
+	"title" : "Hello Story",
+	"body" : "eastryhjklkjghf dgfds",
+	"teaser" : "eastryhjklkjghf dgfds",
+	"log" : "",
+	"revision_timestamp" : 1554834205,
+	"format" : 2,
+	"name" : "webmaster",
+	"picture" : "files/pictures/picture-1.jpg",
+	"data" : "a:11:{s:13:\"form_build_id\";s:37:\"form-1d12bb9478d21d5ec49c0663d72ec4ec\";s:29:\"taxonomy_image_disable_images\";i:0;s:14:\"picture_delete\";i:0;s:14:\"picture_upload\";s:0:\"\";s:7:\"contact\";i:0;s:11:\"newsletters\";a:10:{i:27408;i:27408;i:16878;i:16878;i:29864;i:29864;i:30864;i:30864;i:30865;i:30865;i:32338;i:32338;i:20657;i:0;i:20896;i:0;i:20713;i:0;i:30338;i:0;}s:17:\"mimemail_textonly\";i:0;s:11:\"description\";a:1:{s:5:\"value\";s:84:\"Quick, value-added, actionable stock market ideas for serious traders and investors.\";}s:8:\"keywords\";a:1:{s:5:\"value\";s:28:\"[metatags-taxonomy-keywords]\";}s:18:\"admin_compact_mode\";b:0;s:11:\"remember_me\";i:1;}",
+	"path" : "exclusives/19/04/5680941/hello-story",
+	"field_access_restricted" : [
+		{
+			"value" : 0
+		}
+	],
+	"field_bz_story_body_length" : [
+		{
+			"value" : 21
+		}
+	],
+	"field_contributed_content" : [
+		{
+			"value" : 0
+		}
+	],
+	"field_copyright" : [
+		{
+			"value" : 1
+		}
+	],
+	"field_dnd_override_media" : [
+		{
+			"value" : 0
+		}
+	],
+	"field_evergreen_content" : [
+		{
+			"value" : 0
+		}
+	],
+	"field_google_standout_tag" : [
+		{
+			"value" : 0
+		}
+	],
+	"field_is_bzpro_post" : [
+		{
+			"value" : 1
+		}
+	],
+	"field_is_bz_post" : [
+		{
+			"value" : 1
+		}
+	],
+	"field_is_feed" : [
+		{
+			"value" : 0
+		}
+	],
+	"field_is_slideshow" : [
+		{
+			"value" : 0
+		}
+	],
+	"field_partner_content_url" : [
+		{
+			"value" : null
+		}
+	],
+	"field_rate_bull_bear" : [
+		{
+			"value" : 0
+		}
+	],
+	"field_seo_title" : [
+		{
+			"value" : ""
+		}
+	],
+	"field_slideshow_bottom_link" : [
+		{
+			"url" : null,
+			"title" : null,
+			"attributes" : false
+		}
+	],
+	"field_slideshow_start_link" : [
+		{
+			"value" : null
+		}
+	],
+	"field_stock_chart" : [
+		null
+	],
+	"field_story_post_created" : [
+		{
+			"value" : 1554834152
+		}
+	],
+	"field_story_post_status" : [
+		{
+			"value" : 1
+		}
+	],
+	"field_top_picks" : [
+		{
+			"value" : 0
+		}
+	],
+	"field_image" : [
+		{
+			"UPLOAD_IDENTIFIER" : "d544ef5ec9dc8faf9d6e46e3ff8afb19",
+			"fid" : "168733",
+			"data" : {
+				"alt" : "",
+				"title" : ""
+			},
+			"list" : "1",
+			"uid" : "1",
+			"filename" : "screen_shot_2019-04-04_at_4.18.41_pm.png",
+			"filepath" : "files/images/story/2012/screen_shot_2019-04-04_at_4.18.41_pm.png",
+			"filemime" : "image/png",
+			"filesize" : "6604670",
+			"status" : "1",
+			"timestamp" : "1554834073",
+			"alt" : "",
+			"title" : "",
+			"filefield_upload" : "Upload",
+			"filefield_remove" : "Remove",
+			"upload" : ""
+		}
+	],
+	"field_do_not_distribute" : [
+		{
+			"value" : 0
+		}
+	],
+	"field_slideshow_images" : [
+		null
+	],
+	"_workflow" : 5,
+	"meta" : null,
+	"price" : [ ],
+	"disqus" : {
+		"domain" : "benzingatestingserver",
+		"status" : true,
+		"url" : "https://bz.zingbot.bz/exclusives/19/04/5680941/hello-story",
+		"title" : "Hello Story",
+		"identifier" : "node/5680941",
+		"developer" : 1
+	},
+	"taxonomy" : [
+		{
+			"tid" : 145889,
+			"vid" : 1,
+			"name" : "Exclusives",
+			"description" : "",
+			"weight" : "33",
+			"v_weight_unused" : "0"
+		}
+	],
+	"files" : [ ],
+	"field_is_bzpro_post_value" : 1,
+	"field_is_bz_post_value" : 1,
+	"is_partner" : 0,
+	"field_top_picks_value" : 0,
+	"is_dnd" : 0,
+	"syndicate_url" : null
+}

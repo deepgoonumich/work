@@ -1,0 +1,7 @@
+test:
+  image: golang:1.10
+  script:
+  - mkdir -p /go/src/gitlab.benzinga.io/benzinga
+  - ln -s $PWD /go/src/gitlab.benzinga.io/benzinga/content-models
+  - cd /go/src/gitlab.benzinga.io/benzinga/content-models
+  - make get test

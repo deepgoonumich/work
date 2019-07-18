@@ -1,0 +1,464 @@
+{
+	"_id": {
+		"$id": "50de2127c3be26ca32000000"
+	},
+	"nid": 2353787,
+	"type": "story",
+	"language": "",
+	"uid": 6594,
+	"status": 1,
+	"created": 1329512499,
+	"changed": 1420236309,
+	"comment": 0,
+	"promote": 1,
+	"moderate": 0,
+	"sticky": 0,
+	"tnid": 0,
+	"translate": 0,
+	"is_bz_post": 1,
+	"is_bzpro_post": 0,
+	"count_char": 5087,
+	"count_word": 801,
+	"vid": 2384727,
+	"revision_uid": 1,
+	"title": "Feds Charge Expert Networker John Kinnucan In Insider Trading Case",
+	"body": "The government's sprawling insider trading case netted another fish yesterday afternoon as the FBI took John Kinnucan into custody at his Portland, Oregon home. Kinnucan, the founder of expert network firm Broadband Research LLC, was charged with one count of conspiracy to commit securities fraud, one count of conspiracy to commit wire fraud and two counts of securities fraud in the complaint unsealed today in federal court in New York. \r\n\r\nOn Tuesday, a group of current and former hedge-fund traders entered not-guilty pleas to charges that they were part of an insider trading network connected to Kinnucan. The government alleges that the ring made $61.8 million trading on inside information in Dell (NASDAQ: <a class=\"ticker\" href=\"/stock/dell#NASDAQ\">DELL</a>) stock. \r\n\r\nThose entering not-guilty pleas included Todd Newman, a former portfolio manager at hedge fund Diamondback Capital Management, Anthony Chiasson, co-founder of hedge fund Level Global Investors, Joe Horvath, a technology analyst at SAC Capital's Sigma Capital Management Division, and Danny Kuo, a former vice president and technology-fund manager with Whittier Trust Co. \r\n\r\nIn a real eyebrow raiser, the government alleges that Chiasson and Level Global netted more than $50 million on one trade in Dell shares using inside information. Three other analysts that have been charged in the scheme to illegally trade in Dell stock have entered guilty pleas and are cooperating with the government. They are Jesse Tortora, formerly of Diamondback; Spyridon “Sam” Adondakis, a Level Global analyst; and Sandeep Goyal, a former Dell employee. \r\n\r\nLevel Global and Chiasson were clients of Kinnucan's Broadband Research, which ostensibly connected hedge funds and other investment firms with well-placed technology industry contacts. Kinnucan also conducted channel checks and passed that information on to his clients. The government, however, alleges that Broadband was pumping its list of contacts not just for industry insight and legal information, but for illicit tips like quarterly earnings results. \r\n\r\nThe Feds allege that Kinnucan plied his roster of technology insiders with generous payments, fancy meals, and other considerations in order to get them to divulge sensitive information. For example, former SanDisk (NASDAQ: <a class=\"ticker\" href=\"/stock/sndk#NASDAQ\">SNDK</a>) executive Donald Barnetson pleaded guilty on Friday in federal court to one count of conspiracy to commit securities and wire fraud and admitted that he conspired with Kinnucan. “I conspired with a consultant to provide confidential information with regard to my employer at the time, SanDisk Corp.,” Barnetson told U.S. Magistrate Judge Gabriel Gorenstein in the hearing. \r\n\r\nThe indictment against Kinnucan also explicitly mentions a wiretapped phone conversation between him and a source at F5 Networks (NASDAQ: <a class=\"ticker\" href=\"/stock/ffiv#NASDAQ\">FFIV</a>) which took place in July 2010. The source allegedly told Kinnucan that F5's quarterly revenue results would come in ahead of Wall Street expectations. The government says that within hours of obtaining the inside tip, Kinnucan notified a number of his clients - and at least three of them placed trades based on the illegal information. \r\n\r\nFor his part, Kinnucan has remained defiant. In October 2010, he informed his clients in an email that the FBI had asked him to cooperate in their investigation and that he had refused. By doing this, he basically informed all of Wall Street that the FBI was looking to nail some big fish for insider trading violations and that it would be wise to cover their asses. This likely did not gain him any friends in the Justice Department and Kinnucan also went on CNBC to tell his story.  \r\n\r\nNow, it appears that the government is intent on payback. Kinnucan, however, didn't seem too worried earlier this week prior to his arrest. He said, \"I am glad the government taped my calls, because those calls contain copious exculpatory evidence, and no incriminating evidence against me. The calls demonstrate that I was well aware of the line defining 'inside information,' and was careful never to cross it, even when requested to do so by my clients. This fact is amply demonstrated in the recordings of my phone conversations with clients and colleagues alike.\" \r\n\r\nIn January, the Wall Street Journal reported that the fiery Broadband Research LLC founder went so far as to leave threatening messages for two federal agents who tried to get him to cooperate with the investigation. At the time, Kinnucan said that he made the calls \"to force public exposure\" of the agents \"Constitutional violations.\" In any event, his arrest probably does not come as much of a surprise - he seemed to anticipate this outcome. \r\n\r\nIn an interview last July, he said that he expected he would be arrested. “Am I a target? Yeah, absolutely,” Kinnucan said. “There's a saying that the government indicts who they investigate, so I have always assumed that I was a target.” Kinnucan's client list included prominent hedge funds such as SAC Capital and large money management firms such as Wellington Management Co. and Janus Capital Group, among many others. ",
+	"teaser": "The government's sprawling insider trading case netted another fish yesterday afternoon as the FBI took John Kinnucan into custody at his Portland, Oregon home.",
+	"log": "",
+	"revision_timestamp": 1420236309,
+	"format": 2,
+	"name": "Scott Rubin",
+	"picture": "files/pictures/picture-6594.jpg",
+	"data": "a:9:{s:13:\"form_build_id\";s:37:\"form-54dfb3d48b20c4e62339fa9157f2eaa3\";s:7:\"contact\";i:1;s:11:\"description\";a:1:{s:5:\"value\";s:84:\"Quick, value-added, actionable stock market ideas for serious traders and investors.\";}s:8:\"keywords\";a:1:{s:5:\"value\";s:28:\"[metatags-taxonomy-keywords]\";}s:29:\"taxonomy_image_disable_images\";i:0;s:17:\"mimemail_textonly\";i:0;s:14:\"picture_delete\";s:0:\"\";s:14:\"picture_upload\";s:0:\"\";s:11:\"remember_me\";b:0;}",
+	"path": "news/12/02/2353787/feds-charge-expert-networker-john-kinnucan-in-insider-trading-case",
+	"field_access_restricted": [
+		{
+			"value": 0
+		}
+	],
+	"field_bz_story_body_length": [
+		{
+			"value": 5231
+		}
+	],
+	"field_contributed_content": [
+		{
+			"value": 0
+		}
+	],
+	"field_copyright": [
+		{
+			"value": 1
+		}
+	],
+	"field_evergreen_content": [
+		{
+			"value": 0
+		}
+	],
+	"field_google_standout_tag": [
+		{
+			"value": 0
+		}
+	],
+	"field_is_bzpro_post": [
+		{
+			"value": 0
+		}
+	],
+	"field_is_bz_post": [
+		{
+			"value": 1
+		}
+	],
+	"field_is_feed": [
+		{
+			"value": 0
+		}
+	],
+	"field_is_slideshow": [
+		{
+			"value": 0
+		}
+	],
+	"field_markedup_title": [
+		{
+			"value": null
+		}
+	],
+	"field_partner_content_url": [
+		{
+			"value": null
+		}
+	],
+	"field_rate_bull_bear": [
+		{
+			"value": 2
+		}
+	],
+	"field_seo_title": [
+		{
+			"value": ""
+		}
+	],
+	"field_slideshow_bottom_link": [
+		{
+			"url": null,
+			"title": null,
+			"attributes": false
+		}
+	],
+	"field_slideshow_start_link": [
+		{
+			"value": null
+		}
+	],
+	"field_stock_chart": [
+		null
+	],
+	"field_story_post_created": [
+		{
+			"value": 1329512499
+		}
+	],
+	"field_story_post_status": [
+		{
+			"value": 1
+		}
+	],
+	"field_text_link": [
+		{
+			"value": null
+		}
+	],
+	"field_top_picks": [
+		{
+			"value": 1
+		}
+	],
+	"field_image": [
+		{
+			"UPLOAD_IDENTIFIER": "896e2d57e2d561e63ec9b889033e2cfe",
+			"fid": "168700",
+			"list": "1",
+			"filename": "test-image3.jpg",
+			"filepath": "files/images/story/2012/test-image3_1.jpg",
+			"filemime": "image/jpeg",
+			"source": "field_image_0",
+			"destination": "files/images/story/2012/test-image3_1.jpg",
+			"filesize": "441334",
+			"field": {
+				"field_name": "field_image",
+				"type_name": "story",
+				"display_settings": {
+					"2": {
+						"format": "default",
+						"exclude": 0
+					},
+					"3": {
+						"format": "default",
+						"exclude": 0
+					},
+					"4": {
+						"format": "hidden",
+						"exclude": 0
+					},
+					"5": {
+						"format": "article_image_thumb_default",
+						"exclude": 0
+					},
+					"weight": 0,
+					"parent": "",
+					"bz_views_category": {
+						"format": "default",
+						"exclude": 0
+					},
+					"bz_views_author_new": {
+						"format": "default",
+						"exclude": 0
+					},
+					"label": {
+						"format": "hidden"
+					},
+					"teaser": {
+						"format": "hidden",
+						"exclude": 0
+					},
+					"full": {
+						"format": "hidden",
+						"exclude": 0
+					},
+					"email_plain": {
+						"format": "default",
+						"exclude": 0
+					},
+					"email_html": {
+						"format": "default",
+						"exclude": 0
+					},
+					"token": {
+						"format": "image_plain",
+						"exclude": 0
+					}
+				},
+				"widget_active": "1",
+				"type": "filefield",
+				"required": "0",
+				"multiple": "0",
+				"db_storage": "0",
+				"module": "filefield",
+				"active": "1",
+				"locked": "0",
+				"columns": {
+					"fid": {
+						"type": "int",
+						"not null": false,
+						"views": true
+					},
+					"list": {
+						"type": "int",
+						"size": "tiny",
+						"not null": false,
+						"views": true
+					},
+					"data": {
+						"type": "text",
+						"serialize": true,
+						"views": true
+					}
+				},
+				"list_field": "0",
+				"list_default": 1,
+				"description_field": "0",
+				"field_permissions": {
+					"create": 0,
+					"edit": 0,
+					"edit own": 0,
+					"view": 0,
+					"view own": 0
+				},
+				"widget": {
+					"file_extensions": "png gif jpg jpeg",
+					"file_path": "images/story/2012",
+					"progress_indicator": "bar",
+					"max_filesize_per_file": "",
+					"max_filesize_per_node": "",
+					"max_resolution": "0",
+					"min_resolution": "0",
+					"alt": "",
+					"custom_alt": 0,
+					"title": "",
+					"custom_title": 0,
+					"title_type": "textfield",
+					"default_image": null,
+					"use_default_image": 0,
+					"label": "Image",
+					"weight": 0,
+					"description": "",
+					"type": "imagefield_widget",
+					"module": "imagefield"
+				}
+			},
+			"uid": "1",
+			"status": "1",
+			"timestamp": "1420236306",
+			"alt": "",
+			"title": "",
+			"filefield_upload": "Upload",
+			"filefield_remove": "Remove",
+			"data": {
+				"alt": "",
+				"title": ""
+			},
+			"upload": ""
+		}
+	],
+	"field_primay_tickers_custom": [
+		{
+			"value": 14502
+		},
+		{
+			"value": "10394"
+		}
+	],
+	"field_do_not_distribute": [
+		{
+			"value": 0
+		}
+	],
+	"field_slideshow_images": [
+		null
+	],
+	"_workflow": 5,
+	"disqus": {
+		"domain": "benzingatestingserver",
+		"status": true,
+		"url": "http://bz.bz/news/12/02/2353787/feds-charge-expert-networker-john-kinnucan-in-insider-trading-case",
+		"title": "Feds Charge Expert Networker John Kinnucan In Insider Trading Case",
+		"identifier": "node/2353787",
+		"developer": 1
+	},
+	"price": [
+		{
+			"tid": "10394",
+			"price": "1234.00",
+			"volume": "123456789"
+		},
+		{
+			"tid": "0",
+			"price": "1234.00",
+			"volume": "123456789"
+		}
+	],
+	"taxonomy": [
+		{
+			"tid": 10394,
+			"vid": 2,
+			"name": "AAPL",
+			"description": "Apple",
+			"weight": "0",
+			"v_weight_unused": "0"
+		},
+		{
+			"tid": 64812,
+			"vid": 3,
+			"name": "Broadband Research LLC",
+			"description": "",
+			"weight": "0",
+			"v_weight_unused": "0"
+		},
+		{
+			"tid": 11185,
+			"vid": 2,
+			"name": "DELL",
+			"description": "Dell",
+			"weight": "0",
+			"v_weight_unused": "0"
+		},
+		{
+			"tid": 14502,
+			"vid": 2,
+			"name": "F",
+			"description": "Ford Motor Credit Company",
+			"weight": "0",
+			"v_weight_unused": "0"
+		},
+		{
+			"tid": 11431,
+			"vid": 2,
+			"name": "FFIV",
+			"description": "F5 Networks",
+			"weight": "0",
+			"v_weight_unused": "0"
+		},
+		{
+			"tid": 32433,
+			"vid": 3,
+			"name": "insider trading",
+			"description": "",
+			"weight": "0",
+			"v_weight_unused": "0"
+		},
+		{
+			"tid": 64811,
+			"vid": 3,
+			"name": "John Kinnucan",
+			"description": "",
+			"weight": "0",
+			"v_weight_unused": "0"
+		},
+		{
+			"tid": 57,
+			"vid": 1,
+			"name": "News",
+			"description": "",
+			"weight": "0",
+			"v_weight_unused": "0"
+		},
+		{
+			"tid": 18921,
+			"vid": 3,
+			"name": "SAC Capital",
+			"description": "",
+			"weight": "0",
+			"v_weight_unused": "0"
+		},
+		{
+			"tid": 12939,
+			"vid": 2,
+			"name": "SNDK",
+			"description": "Sandisk",
+			"weight": "0",
+			"v_weight_unused": "0"
+		},
+		{
+			"tid": 0,
+			"vid": 2,
+			"name": "",
+			"description": "Sandisk",
+			"weight": "0",
+			"v_weight_unused": "0"
+		},
+		{
+			"tid": 44,
+			"vid": 1,
+			"name": "Hedge Funds",
+			"description": "",
+			"weight": "1",
+			"v_weight_unused": "0"
+		},
+		{
+			"tid": 34,
+			"vid": 1,
+			"name": "Movers & Shakers",
+			"description": "",
+			"weight": "2",
+			"v_weight_unused": "0"
+		},
+		{
+			"tid": 29619,
+			"vid": 1,
+			"name": "Legal",
+			"description": "",
+			"weight": "12",
+			"v_weight_unused": "0"
+		},
+		{
+			"tid": 29618,
+			"vid": 1,
+			"name": "Events",
+			"description": "",
+			"weight": "19",
+			"v_weight_unused": "0"
+		},
+		{
+			"tid": 9999,
+			"vid": 11,
+			"name": "Future test",
+			"description": "",
+			"weight": "70",
+			"v_weight_unused": "0"
+		},
+		{
+			"tid": 25,
+			"vid": 1,
+			"name": "Intraday Update",
+			"description": "",
+			"weight": "30",
+			"v_weight_unused": "0"
+		},
+		{
+			"tid": 18467,
+			"vid": 1,
+			"name": "General",
+			"description": "",
+			"weight": "70",
+			"v_weight_unused": "0"
+		}
+	],
+	"files": [],
+	"field_is_bzpro_post_value": 0,
+	"field_is_bz_post_value": 1,
+	"field_top_picks_value": 1,
+	"syndicate_url": "https://www.google.com/search?q=how+to+internet"
+}

@@ -1,0 +1,75 @@
+stages:
+  - test
+  - build_images
+
+lint:
+  image: golang:alpine
+  stage: test
+  before_script:
+    # Create a symbolic link under $GOPATH, this is needed for local build
+    # i.e. /go/src/gitlab.com/ykyuen/gitlab-ci-go-build
+    - apk add --no-cache git bash build-base
+    - cd $GOPATH/src
+    - mkdir -p gitlab.benzinga.io/$CI_PROJECT_NAMESPACE
+    - cd gitlab.benzinga.io/$CI_PROJECT_NAMESPACE
+    - ln -s $CI_PROJECT_DIR
+    - cd $CI_PROJECT_NAME
+    - ls -la
+  script:
+    # Run Tests
+    - wget -O - -q https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s v1.16.0
+    - ./bin/golangci-lint run -c .golangci.yml --deadline=5m 
+
+test:
+  image: docker:latest
+  stage: test
+  coverage: '/total:\s*\Wstatements\W\s*\d+.\d+%/'
+  variables:
+    REFDB_CACHE_PATH: "" # intentionally left empty to force use of os.Temp
+    GOFLAGS: "-mod=vendor"
+  before_script:
+    # Create a symbolic link under $GOPATH, this is needed for local build
+    # i.e. /go/src/gitlab.com/ykyuen/gitlab-ci-go-build
+    - apk add --no-cache py-pip python-dev libffi-dev openssl-dev gcc libc-dev make git bash build-base go
+    - pip install docker-compose
+    - export MY_IP=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')
+    - export KAFKA_BROKERS=${MY_IP}:19092,${MY_IP}:29092,${MY_IP}:39092
+    - make deps
+    - mkdir -p /go/src/gitlab.benzinga.io/benzinga
+    - ln -s $PWD /go/src/gitlab.benzinga.io/benzinga/ftp-engine
+    - cd /go/src/gitlab.benzinga.io/benzinga/ftp-engine
+    - chmod +x resources/scripts/go_coverage.sh
+  script:
+    # Run Tests
+    - resources/scripts/go_coverage.sh
+  allow_failure: true
+  after_script:
+    - docker-compose down
+
+build_service:
+  image: docker:latest
+  stage: build_images
+  script:
+    - apk add --no-cache git
+    - docker login -u gitlab-ci-token -p "$CI_JOB_TOKEN" "$CI_REGISTRY"
+    - docker build -t "$CI_REGISTRY_IMAGE/engine:latest" . -f resources/dockerfiles/engine.Dockerfile
+    - for TAG in r${CI_COMMIT_SHA:0:8} ${CI_COMMIT_TAG};
+      do
+        docker tag "$CI_REGISTRY_IMAGE/engine:latest" "$CI_REGISTRY_IMAGE/engine:$TAG" &&
+        docker push "$CI_REGISTRY_IMAGE/engine:$TAG" &&
+        echo "Pushed $TAG successfully.";
+      done;
+
+build_updater:
+  image: docker:latest
+  stage: build_images
+  script:
+    - apk add --no-cache git
+    - docker login -u gitlab-ci-token -p "$CI_JOB_TOKEN" "$CI_REGISTRY"
+    - docker build -t "$CI_REGISTRY_IMAGE/updater:latest" . -f resources/dockerfiles/updater.Dockerfile
+    - for TAG in r${CI_COMMIT_SHA:0:8} ${CI_COMMIT_TAG};
+      do
+        docker tag "$CI_REGISTRY_IMAGE/updater:latest" "$CI_REGISTRY_IMAGE/updater:$TAG" &&
+        docker push "$CI_REGISTRY_IMAGE/updater:$TAG" &&
+        echo "Pushed $TAG successfully.";
+      done;
